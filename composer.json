@@ -1,0 +1,26 @@
+{
+  "name": "leadvertex/plugin-core-geocoder",
+  "description": "LeadVertex plugin geocoder core",
+  "type": "library",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Timur Kasumov aka XAKEPEHOK",
+      "email": "support@leadvertex.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Leadvertex\\Plugin\\Core\\Geocoder\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4.0",
+    "ext-json": "*",
+    "leadvertex/plugin-core": "^0.3.0",
+    "moneyphp/money": "^3.3",
+    "leadvertex/component-address": "^0.2.2",
+    "adbario/php-dot-notation": "^2.2"
+  }
+}
