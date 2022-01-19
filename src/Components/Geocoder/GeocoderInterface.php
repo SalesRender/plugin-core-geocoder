@@ -12,6 +12,11 @@ use Leadvertex\Components\Address\Address;
 interface GeocoderInterface
 {
 
-    public function handle(string $typing, Address $address): GeocoderResult;
+    /**
+     * @param string $typing
+     * @param Address $address
+     * @return GeocoderResult[]
+     */
+    public function handle(string $typing, Address $address): array;
 
 }
