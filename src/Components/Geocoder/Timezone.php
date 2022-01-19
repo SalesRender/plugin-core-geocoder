@@ -24,7 +24,7 @@ class Timezone implements JsonSerializable
     public function __construct(string $timezoneOrOffset)
     {
         if (preg_match('~^[+\-]\d{2}:\d{2}$~', $timezoneOrOffset)) {
-            $offset = $timezoneOrOffset;
+            $this->offset = $timezoneOrOffset;
         } elseif (in_array($timezoneOrOffset, DateTimeZone::listIdentifiers())) {
             $this->name = $timezoneOrOffset;
         } else {
