@@ -34,11 +34,11 @@ class GeocoderAction implements ActionInterface
             }
 
             $address = new Address(
-                (string) $data->get('address.postcode', ''),
                 (string) $data->get('address.region', ''),
                 (string) $data->get('address.city', ''),
                 (string) $data->get('address.address_1', ''),
                 (string) $data->get('address.address_2', ''),
+                (string) $data->get('address.postcode', ''),
                 $data->get('address.countryCode'),
                 $location,
             );
