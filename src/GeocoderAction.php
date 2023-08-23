@@ -38,6 +38,8 @@ class GeocoderAction implements ActionInterface
                 (string) $data->get('address.city', ''),
                 (string) $data->get('address.address_1', ''),
                 (string) $data->get('address.address_2', ''),
+                (string) $data->get('address.building', ''),
+                (string) $data->get('address.apartment', ''),
                 (string) $data->get('address.postcode', ''),
                 $data->get('address.countryCode'),
                 $location,

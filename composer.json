@@ -19,7 +19,7 @@
     "php": ">=7.4.0",
     "ext-json": "*",
     "leadvertex/plugin-core": "^0.3.0",
-    "leadvertex/component-address": "^0.2.2",
+    "leadvertex/component-address": "^1.0.0",
     "adbario/php-dot-notation": "^2.2"
   }
 }
