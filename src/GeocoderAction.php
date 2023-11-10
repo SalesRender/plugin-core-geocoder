@@ -5,13 +5,13 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Core\Geocoder;
+namespace SalesRender\Plugin\Core\Geocoder;
 
 use Adbar\Dot;
-use Leadvertex\Components\Address\Address;
-use Leadvertex\Components\Address\Location;
-use Leadvertex\Plugin\Core\Actions\ActionInterface;
-use Leadvertex\Plugin\Core\Geocoder\Components\Geocoder\GeocoderContainer;
+use SalesRender\Components\Address\Address;
+use SalesRender\Components\Address\Location;
+use SalesRender\Plugin\Core\Actions\ActionInterface;
+use SalesRender\Plugin\Core\Geocoder\Components\Geocoder\GeocoderContainer;
 use Slim\Http\Response;
 use Slim\Http\ServerRequest;
 use Throwable;

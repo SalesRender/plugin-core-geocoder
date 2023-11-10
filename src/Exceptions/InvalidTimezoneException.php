@@ -5,7 +5,7 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Core\Geocoder\Exceptions;
+namespace SalesRender\Plugin\Core\Geocoder\Exceptions;
 
 use Exception;
 

@@ -1,25 +1,25 @@
 {
-  "name": "leadvertex/plugin-core-geocoder",
-  "description": "LeadVertex plugin geocoder core",
+  "name": "salesrender/plugin-core-geocoder",
+  "description": "SalesRender plugin geocoder core",
   "type": "library",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
       "name": "Timur Kasumov aka XAKEPEHOK",
-      "email": "support@leadvertex.com"
+      "email": "support@salesrender.com"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Leadvertex\\Plugin\\Core\\Geocoder\\": "src/"
+      "SalesRender\\Plugin\\Core\\Geocoder\\": "src/"
     }
   },
   "require": {
     "php": ">=7.4.0",
     "ext-json": "*",
-    "leadvertex/plugin-core": "^0.3.0",
-    "leadvertex/component-address": "^1.0.0",
+    "salesrender/plugin-core": "^0.3.0",
+    "salesrender/component-address": "^1.0.0",
     "adbario/php-dot-notation": "^2.2"
   }
 }

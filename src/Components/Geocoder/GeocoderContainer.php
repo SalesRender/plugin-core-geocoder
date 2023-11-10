@@ -5,9 +5,9 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Core\Geocoder\Components\Geocoder;
+namespace SalesRender\Plugin\Core\Geocoder\Components\Geocoder;
 
-use Leadvertex\Plugin\Core\Geocoder\Exceptions\GeocoderContainerException;
+use SalesRender\Plugin\Core\Geocoder\Exceptions\GeocoderContainerException;
 
 class GeocoderContainer
 {

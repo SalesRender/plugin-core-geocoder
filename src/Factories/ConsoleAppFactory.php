@@ -5,12 +5,12 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Core\Geocoder\Factories;
+namespace SalesRender\Plugin\Core\Geocoder\Factories;
 
 
 use Symfony\Component\Console\Application;
 
-class ConsoleAppFactory extends \Leadvertex\Plugin\Core\Factories\ConsoleAppFactory
+class ConsoleAppFactory extends \SalesRender\Plugin\Core\Factories\ConsoleAppFactory
 {
 
     public function build(): Application

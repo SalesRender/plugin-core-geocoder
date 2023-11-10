@@ -5,10 +5,10 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Core\Geocoder\Components\Geocoder;
+namespace SalesRender\Plugin\Core\Geocoder\Components\Geocoder;
 
 use JsonSerializable;
-use Leadvertex\Components\Address\Address;
+use SalesRender\Components\Address\Address;
 
 class GeocoderResult implements JsonSerializable
 {

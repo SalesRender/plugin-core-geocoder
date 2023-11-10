@@ -5,11 +5,11 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Core\Geocoder\Components\Geocoder;
+namespace SalesRender\Plugin\Core\Geocoder\Components\Geocoder;
 
 use DateTimeZone;
 use JsonSerializable;
-use Leadvertex\Plugin\Core\Geocoder\Exceptions\InvalidTimezoneException;
+use SalesRender\Plugin\Core\Geocoder\Exceptions\InvalidTimezoneException;
 
 class Timezone implements JsonSerializable
 {
