@@ -18,7 +18,7 @@
   "require": {
     "php": ">=7.4.0",
     "ext-json": "*",
-    "salesrender/plugin-core": "^0.3.0",
+    "salesrender/plugin-core": "^0.4.0",
     "salesrender/component-address": "^1.0.0",
     "adbario/php-dot-notation": "^2.2"
   }
