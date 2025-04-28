@@ -15,11 +15,13 @@ class GeocoderResult implements JsonSerializable
 
     private Address $address;
     private ?Timezone $timezone;
+    private ?string $info;
 
-    public function __construct(Address $address, ?Timezone $timezone)
+    public function __construct(Address $address, ?Timezone $timezone, ?string $info = null)
     {
         $this->address = $address;
         $this->timezone = $timezone;
+        $this->info = $info;
     }
 
     public function getAddress(): Address
@@ -32,11 +34,17 @@ class GeocoderResult implements JsonSerializable
         return $this->timezone;
     }
 
+    public function getInfo(): ?string
+    {
+        return $this->info;
+    }
+
     public function jsonSerialize(): array
     {
         return [
             'address' => $this->address,
             'timezone' => $this->timezone,
+            'info' => $this->info,
         ];
     }
 }
