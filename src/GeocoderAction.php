@@ -13,6 +13,7 @@ use SalesRender\Components\Address\Location;
 use SalesRender\Plugin\Core\Actions\ActionInterface;
 use SalesRender\Plugin\Core\Geocoder\Components\Geocoder\GeocoderContainer;
 use SalesRender\Plugin\Core\Geocoder\Exceptions\GeocoderContainerException;
+use SalesRender\Plugin\Core\Geocoder\Exceptions\GeocoderHandleException;
 use Slim\Http\Response;
 use Slim\Http\ServerRequest;
 use Throwable;
@@ -61,6 +62,13 @@ class GeocoderAction implements ActionInterface
             ], 400);
         }
 
-        return $response->withJson($handler->handle($typing, $address));
+        try {
+            return $response->withJson($handler->handle($typing, $address));
+        } catch (GeocoderHandleException $exception) {
+            return $response->withJson([
+                'code' => 417,
+                'message' => $exception->getMessage(),
+            ], 417);
+        }
     }
 }
